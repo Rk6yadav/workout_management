@@ -1,0 +1,8 @@
+<odoo>
+ <record id="view_workout_measurement_list" model="ir.ui.view"><field name="name">workout.measurement.list</field><field name="model">workout.measurement</field><field name="arch" type="xml"><list><field name="measurement_date"/><field name="member_id"/><field name="weight_kg"/><field name="body_fat_percent"/><field name="bmi"/><field name="waist_cm"/></list></field></record>
+ <record id="action_workout_measurements" model="ir.actions.act_window"><field name="name">Measurements</field><field name="res_model">workout.measurement</field><field name="view_mode">list,form</field></record>
+ <record id="view_workout_pr_list" model="ir.ui.view"><field name="name">workout.personal.record.list</field><field name="model">workout.personal.record</field><field name="arch" type="xml"><list><field name="achieved_on"/><field name="member_id"/><field name="exercise_id"/><field name="record_type"/><field name="value"/><field name="unit"/></list></field></record>
+ <record id="action_workout_prs" model="ir.actions.act_window"><field name="name">Personal Records</field><field name="res_model">workout.personal.record</field><field name="view_mode">list,form</field></record>
+ <record id="action_workout_memberships" model="ir.actions.act_window"><field name="name">Memberships</field><field name="res_model">workout.membership</field><field name="view_mode">list,form</field></record>
+ <record id="action_workout_membership_plans" model="ir.actions.act_window"><field name="name">Membership Plans</field><field name="res_model">workout.membership.plan</field><field name="view_mode">list,form</field></record>
+</odoo>

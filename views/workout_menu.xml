@@ -1,0 +1,18 @@
+<odoo>
+ <menuitem id="workout_menu_root" name="Workout" sequence="10" groups="workout_group_user"/>
+ <menuitem id="workout_menu_operations" name="Operations" parent="workout_menu_root" sequence="10"/>
+ <menuitem id="workout_menu_members" name="Members" parent="workout_menu_operations" action="action_workout_members" sequence="10"/>
+ <menuitem id="workout_menu_sessions" name="Workout Sessions" parent="workout_menu_operations" action="action_workout_sessions" sequence="20"/>
+ <menuitem id="workout_menu_attendance" name="Attendance" parent="workout_menu_operations" action="action_workout_attendance" sequence="30"/>
+ <menuitem id="workout_menu_programs" name="Programs" parent="workout_menu_root" action="action_workout_programs" sequence="20"/>
+ <menuitem id="workout_menu_exercises" name="Exercise Library" parent="workout_menu_root" action="action_workout_exercises" sequence="30"/>
+ <menuitem id="workout_menu_progress" name="Progress" parent="workout_menu_root" sequence="40"/>
+ <menuitem id="workout_menu_measurements" name="Measurements" parent="workout_menu_progress" action="action_workout_measurements" sequence="10"/>
+ <menuitem id="workout_menu_prs" name="Personal Records" parent="workout_menu_progress" action="action_workout_prs" sequence="20"/>
+ <menuitem id="workout_menu_memberships" name="Membership" parent="workout_menu_root" sequence="50"/>
+ <menuitem id="workout_menu_membership_plans" name="Plans" parent="workout_menu_memberships" action="action_workout_membership_plans" sequence="10"/>
+ <menuitem id="workout_menu_member_memberships" name="Member Memberships" parent="workout_menu_memberships" action="action_workout_memberships" sequence="20"/>
+ <menuitem id="workout_menu_configuration" name="Configuration" parent="workout_menu_root" sequence="90" groups="workout_group_manager"/>
+ <menuitem id="workout_menu_muscles" name="Muscle Groups" parent="workout_menu_configuration" action="action_workout_muscles" sequence="10"/>
+ <menuitem id="workout_menu_equipment" name="Equipment" parent="workout_menu_configuration" action="action_workout_equipment" sequence="20"/>
+</odoo>
